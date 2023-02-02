@@ -268,7 +268,10 @@ img {border: none;vertical-align: middle;max-width: 100%;}
 .bx-grid-border.bx-grid-border-no .hna-cat-type-2:first-child{border-top: 0;padding-top: 0;}
 /* hna-cat-cover-left */
 .hna-cat-cover-left{width: 860px;}
-.hna-cat-cover-left .article:first-child{width: 590px;float: left;}
+.hna-cat-cover-left .article:first-child{
+    width: 590px;
+    float: left;
+}
 .hna-cat-cover-left .article:first-child .article-title{font-size: 26px;line-height: 1.4;margin-bottom: 10px;}
 .hna-cat-cover-left .article-info{display: none;}
 .hna-cat-cover-left .article:not(:first-child){width: 250px;float: right;margin-top: 20px;padding-top: 20px;border-top: 1px solid #ebebeb;}
