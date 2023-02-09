@@ -135,7 +135,7 @@
         if (isIE) {
           $("body").addClass("ie");
         }
-        $(".hna-qc-slider").bxSlider({
+        $(".ndh-qc-slider").bxSlider({
           minSlides: 1,
           maxSlides: 1,
           moveSlides: 1,
@@ -148,45 +148,62 @@
           mode: "fade",
         });
       });
+
+      function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "View more";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "View less";
+          moreText.style.display = "inline";
+        }
+      }
     </script>
   </head>
   <body>
     <div class="webpage pc-home">
       <div class="icon-bar">
         <a href="https://www.facebook.com/" class="facebook"
-          ><i class="fa brands fa-facebook"></i
+          >Facebook<i class="fa brands fa-facebook"></i
         ></a>
         <a href="https://twitter.com/" class="twitter"
-          ><i class="fa fa-twitter"></i
+          >Twitter<i class="fa fa-twitter"></i
         ></a>
         <a href="https://www.instagram.com/" class="instagram"
-          ><i class="fa brands fa-instagram"></i
+          >Instagram<i class="fa brands fa-instagram"></i
         ></a>
         <a href="https://www.linkedin.com/" class="linkedin"
-          ><i class="fa fa-linkedin"></i
+          >LinkedIn<i class="fa fa-linkedin"></i
         ></a>
         <a href="https://github.com/" class="github"
-          ><i class="fa brands fa-github"></i
+          >Github<i class="fa brands fa-github"></i
         ></a>
         <a href="https://www.youtube.com/" class="youtube"
-          ><i class="fa brands fa-youtube fa-youtube-play"></i
+          >Youtube<i class="fa brands fa-youtube fa-youtube-play"></i
         ></a>
       </div>
+
       <header id="header" class="fw clearfix">
         <div class="header-top fw clearfix">
           <div class="siteCenter clearfix">
             <div class="lt">
-              <span class="hna-system-date">February 2, 2023 08:26</span>
-              <a class="hna-system-link" href="">ADVERTISEMENT</a>
-              <a class="hna-system-link" href="">CONTACT US</a>
+              <span class="ndh-system-date">February 2, 2023 08:26</span>
+              <a class="ndh-system-link" href="">ADVERTISEMENT</a>
+              <a class="ndh-system-link" href="">CONTACT US</a>
               <span>
                 - Hotline: 0968.96.34.96 - Email: haiquanonline@gmail.com</span
               >
             </div>
 
             <div class="rt">
-              <a class="hna-site-link hna-btn-english lt" href="">Tiếng Việt</a>
-              <a class="hna-site-link hna-btn-signin lt" href="">Đăng nhập</a>
+              <a class="ndh-site-link ndh-btn-english lt" href="">Tiếng Việt</a>
+              <a class="ndh-site-link ndh-btn-signin lt" href="">Đăng nhập</a>
               <form id="frmSearch" name="frmSearch">
                 <input
                   type="text"
@@ -207,14 +224,14 @@
         </div>
         <div class="header-logo fw clearfix">
           <div class="siteCenter clearfix">
-            <h1 class="hna-heading-logo lt">
+            <h1 class="ndh-heading-logo lt">
               <a class="logo" href="">
                 <img src="images/logo.png" height="50" alt="" />
               </a>
             </h1>
-            <div class="hna-multi-site rt">
+            <div class="ndh-multi-site rt">
               <a
-                class="hna-site-dnhq lt"
+                class="ndh--dnhq lt"
                 href="https://dnhq.haiquanonline.com.vn/"
                 target="_blank"
               >
@@ -225,7 +242,7 @@
                 />
               </a>
               <a
-                class="hna-site-hq-video lt"
+                class="ndh--hquan-video lt"
                 href="https://videos.haiquanonline.com.vn/"
                 target="_blank"
               >
@@ -236,7 +253,7 @@
                 />
               </a>
               <a
-                class="hna-site-haiquanonline lt"
+                class="ndh--haiquanonline lt"
                 href="https://haiquanonline.com.vn/"
                 target="_blank"
               >
@@ -296,8 +313,8 @@
         <div class="siteCenter clearfix">
           <div class="utility-left lt">
             <marquee
-              id="hna-marquee"
-              class="fw lt f1"
+              id="ndh-marquee"
+              class="fw lt"
               onmouseover="this.stop();"
               onmouseout="this.start();"
               scrollamount="5"
@@ -321,19 +338,19 @@
 
           <div class="rt">
             <a
-              class="hna-ico-btn hna-ico-facebook lt"
+              class="ndh-ico-btn ndh-icn-facebook lt"
               href="https://www.facebook.com/"
               target="_blank"
               rel="noopener"
             ></a>
             <a
-              class="hna-ico-btn hna-ico-youtube lt"
+              class="ndh-ico-btn ndh-icn-youtube lt"
               href="https://www.youtube.com/"
               target="_blank"
               rel="noopener"
             ></a>
             <a
-              class="hna-ico-btn hna-ico-twitter lt"
+              class="ndh-ico-btn ndh-icn-twitter lt"
               href="https://twitter.com/"
               target="_blank"
               rel="noopener"
@@ -342,11 +359,11 @@
         </div>
       </div>
 
-      <div id="hna-qc-menu-after" class="fw clearfix">
+      <div id="ndh-qc-menu-after" class="fw clearfix">
         <div class="siteCenter clearfix">
-          <div class="hna-qc-items">
-            <div class="hna-qc-slider">
-              <div class="hna-qc-item">
+          <div class="ndh-qc-items">
+            <div class="ndh-qc-slider">
+              <div class="ndh-qc-item">
                 <img
                   border="0"
                   src="https://haiquanonline.com.vn/stores/ads_data/lebhq/082022/04/16/2906_Banner_490_x90_TYa_dam_theo_HY_dai_hYn_2022-_Update.jpg?rt=20220804162907"
@@ -356,8 +373,7 @@
                   height=" 90"
                 />
               </div>
-
-              <div class="hna-qc-item">
+              <div class="ndh-qc-item">
                 <img
                   border="0"
                   src="https://haiquanonline.com.vn/stores/ads_data/administrator/112018/26/09/4547_tien_gui_online_490x90-08.jpg"
@@ -367,11 +383,7 @@
                   height="90"
                 />
               </div>
-            </div>
-          </div>
-          <div class="hna-qc-items">
-            <div class="hna-qc-slider">
-              <div class="hna-qc-item">
+              <div class="ndh-qc-item">
                 <img
                   border="0"
                   src="https://haiquanonline.com.vn/stores/ads_data/lebhq/012021/15/17/3331_Banner_490_x_90_Thai_SYn.png?rt=20210115173331"
@@ -385,674 +397,674 @@
           </div>
         </div>
       </div>
+    </div>
 
-      <main id="main" class="fw clearfix">
-        <div class="main-body fw lt clearfix">
-          <div class="siteCenter clearfix">
-            <div class="bx-cat bx-grid-cover fw lt clearfix">
-              <div class="hna-cover-left lt">
-                <div class="hna-cover-headlines lt">
-                  <div class="bx-cat-title fw lt mb2 clearfix">
-                    <h2 class="bx-cat-name f4 lt">
-                      <a class="bx-cat-link" href=""
-                        ><span class="clr-008ed2">Head</span>lines</a
-                      >
-                    </h2>
-                  </div>
-                  <div class="bx-cat-content fw lt clearfix">
-                    <div class="article">
-                      <a class="article-image" href="">
-                        <img
-                          class="mastercms_lazyload"
-                          src="images/demo/partychief.jpg"
-                          alt=""
-                        />
-                      </a>
-                      <h3 class="article-title">
-                        <a class="article-link f0" href=""
-                          >Party chief chairs meeting of Central Military
-                          Comminission</a
-                        >
-                      </h3>
-                      <p class="article-info">
-                        <span class="article-date">31/01/2023 09:30</span>
-                        <a class="article-cat" href="">Customs</a>
-                      </p>
-                      <div class="article-desc">
-                        VCN – During Lunar New Year 2023, Noi Bai International
-                        Airport Customs Branch handled customs procedures for
-                        209 international flights with more than 54,000
-                        passengers on entry.
-                      </div>
-                    </div>
-                    <div class="article">
-                      <a class="article-image" href="">
-                        <img
-                          class="mastercms_lazyload"
-                          src="images/demo/anh2.jpg"
-                          alt=""
-                        />
-                      </a>
-                      <h3 class="article-title">
-                        <a class="article-link f0" href=""
-                          >PM underlines need to optimise resources from SOEs</a
-                        >
-                      </h3>
-                      <p class="article-info">
-                        <span class="article-date">09:29 | 31/01/2023</span>
-                        <a class="article-cat" href="">Customs</a>
-                      </p>
-                      <div class="article-desc">
-                        VCN – The agricultural products, seafood, and leather
-                        exports of Dong Thap province-based enterprises have
-                        seen remarkable growth. The achievements resulting from
-                        effective solutions and facilitation by the local
-                        government, including Dong Thap Customs Department,
-                        enterprises said.
-                      </div>
-                    </div>
-                    <div class="article">
-                      <a class="article-image" href="">
-                        <img
-                          class="mastercms_lazyload"
-                          src="images/demo/anh3.jpg"
-                          alt=""
-                        />
-                      </a>
-                      <h3 class="article-title">
-                        <a class="article-link f0" href=""
-                          >Vietnam's GDP growth to be well above 6.5% target,
-                          forecast experts</a
-                        >
-                      </h3>
-                      <p class="article-info">
-                        <span class="article-date">13:26 | 30/01/2023</span>
-                        <a class="article-cat" href="">Customs</a>
-                      </p>
-                      <div class="article-desc">
-                        VCN - Sharing and listening to businesses at forums or
-                        creating channels to receive opinions of businesses is a
-                        way for Quang Ninh Customs Department to timely support
-                        and accompany businesses to improve the business
-                        environment, and enhance the competitiveness of Quang
-                        Ninh province.
-                      </div>
-                    </div>
-                    <div class="article">
-                      <a class="article-image" href="">
-                        <img
-                          class="mastercms_lazyload"
-                          src="images/demo/anh4.jpg"
-                          alt=""
-                        />
-                      </a>
-                      <h3 class="article-title">
-                        <a class="article-link f0" href=""
-                          >European Parlia-ment member hails strong Viet-namese
-                          position</a
-                        >
-                      </h3>
-                      <p class="article-info">
-                        <span class="article-date">20:38 | 03/01/2023</span>
-                        <a class="article-cat" href="">Customs</a>
-                      </p>
-                      <div class="article-desc">
-                        VCN - Exports of agricultural products, seafood, leather
-                        and footwear... of Dong Thap enterprises in the past
-                        year have experienced remarkable growth. Along with
-                        breakthrough solutions, enterprises commented that this
-                        result was from the support and facilitation of the
-                        management agencies in the area, including the Dong Thap
-                        Customs Department.
-                      </div>
-                    </div>
-                    <div class="article">
-                      <a class="article-image" href="">
-                        <img
-                          class="mastercms_lazyload"
-                          src="images/demo/partychief.jpg"
-                          alt=""
-                        />
-                      </a>
-                      <h3 class="article-title">
-                        <a class="article-link f0" href=""
-                          >Party chief chairs meeting of Central Military
-                          Comminission</a
-                        >
-                      </h3>
-                      <p class="article-info">
-                        <span class="article-date">20:38 | 03/01/2023</span>
-                        <a class="article-cat" href="">Customs</a>
-                      </p>
-                      <div class="article-desc">
-                        VCN - At the end of a year of many challenges, Dong Nai
-                        Customs Department's collective continues to leave a
-                        bold mark on the image of a State agency with many
-                        creative and effective activities in supporting
-                        enterprises, actively contributing to the results of
-                        local economic development and are highly appreciated by
-                        the government and the business community.
-                      </div>
-                    </div>
-                    <div class="article">
-                      <a class="article-image" href="">
-                        <img
-                          class="mastercms_lazyload"
-                          src="images/demo/anh2.jpg"
-                          alt=""
-                        />
-                      </a>
-                      <h3 class="article-title">
-                        <a class="article-link f0" href=""
-                          >PM underlines need to optimise resources from SOEs</a
-                        >
-                      </h3>
-                      <p class="article-info">
-                        <span class="article-date">20:38 | 03/01/2023</span>
-                        <a class="article-cat" href="">Customs</a>
-                      </p>
-                      <div class="article-desc">
-                        VCN - In 2022, for the first time, the budget revenue of
-                        Hai Phong Customs Department reached and exceeded the
-                        milestone of VND 70,000 billion, which is not only a
-                        bold mark in the work results of the Department but also
-                        an essential contribution to the overall achievements of
-                        the sector and the locality.
-                      </div>
-                    </div>
-                    <div class="article">
-                      <a class="article-image" href="">
-                        <img
-                          class="mastercms_lazyload"
-                          src="images/demo/anh3.jpg"
-                          alt=""
-                        />
-                      </a>
-                      <h3 class="article-title">
-                        <a class="article-link f0" href=""
-                          >Vietnam's GDP growth to be well above 6.5% target,
-                          forecast experts</a
-                        >
-                      </h3>
-                      <p class="article-info">
-                        <span class="article-date">20:38 | 03/01/2023</span>
-                        <a class="article-cat" href="">Customs</a>
-                      </p>
-                      <div class="article-desc">
-                        VCN – The implementation of risk management measures on
-                        three routes of sea, land and air in modern customs
-                        control has contributed to improving the efficiency of
-                        risk assessment and screening selection and customs risk
-                        management.
-                      </div>
-                    </div>
-                  </div>
+    <main id="main" class="fw clearfix">
+      <div class="main-body fw lt clearfix">
+        <div class="siteCenter clearfix">
+          <div class="bx-cat bx-grid-cover fw lt clearfix">
+            <div class="ndh-cover-left lt">
+              <div class="ndh-cover-headlines lt">
+                <div class="bx-cat-title fw lt mb2 clearfix">
+                  <h2 class="bx-cat-name lt">
+                    <a class="bx-cat-link" href=""
+                      ><span class="clr-008ed2">Head</span>lines</a
+                    >
+                  </h2>
                 </div>
-                <div class="hna-cover-center rt">
-                  <div class="bx-cat-content fw lt clearfix">
-                    <div class="article">
-                      <a class="article-image" href="">
-                        <img
-                          class="mastercms_lazyload"
-                          src="images/demo/main_pic.jpg"
-                          alt=""
-                        />
-                      </a>
-                      <h3 class="article-title">
-                        <a class="article-link f0" href=""
-                          >Promoting Vietnam-Laos ties-Existence, development
-                          rule of both countries: Lao diplomat</a
-                        >
-                      </h3>
-                      <p class="article-info">
-                        <span class="article-date">31/01/2023 09:30</span>
-                        <a class="article-cat" href="">Customs</a>
-                      </p>
-                      <div class="article-desc">
-                        The Vietnam-Laos relations have been special and rare
-                        ties with loyalty and purity, a priceless asset, a rule
-                        for existence and development of both countries and a
-                        decisive factor for the success of the revolution in
-                        each nation
-                      </div>
+                <div class="bx-cat-content fw lt clearfix">
+                  <div class="article">
+                    <a class="article-image" href="">
+                      <img
+                        class="mastercms_lazyload"
+                        src="images/demo/partychief.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <h3 class="article-title">
+                      <a class="article-link" href=""
+                        >Party chief chairs meeting of Central Military
+                        Comminission</a
+                      >
+                    </h3>
+                    <p class="article-info">
+                      <span class="article-date">31/01/2023 09:30</span>
+                      <a class="article-cat" href="">Customs</a>
+                    </p>
+                    <div class="article-desc">
+                      VCN – During Lunar New Year 2023, Noi Bai International
+                      Airport Customs Branch handled customs procedures for 209
+                      international flights with more than 54,000 passengers on
+                      entry.
                     </div>
-                    <div class="article">
-                      <a class="article-image" href="">
-                        <img
-                          class="mastercms_lazyload"
-                          src="images/demo/hoi_nghi.jpg"
-                          alt=""
-                        />
-                      </a>
-                      <h3 class="article-title">
-                        <a class="article-link f0" href=""
-                          >Vietnam becomes world's sixth largest fibre, yarn
-                          exporter</a
-                        >
-                      </h3>
-                      <p class="article-info">
-                        <span class="article-date">09:29 | 31/01/2023</span>
-                        <a class="article-cat" href="">Customs</a>
-                      </p>
-                      <div class="article-desc">
-                        VCN – The agricultural products, seafood, and leather
-                        exports of Dong Thap province-based enterprises have
-                        seen remarkable growth. The achievements resulting from
-                        effective solutions and facilitation by the local
-                        government, including Dong Thap Customs Department,
-                        enterprises said.
-                      </div>
+                  </div>
+                  <div class="article">
+                    <a class="article-image" href="">
+                      <img
+                        class="mastercms_lazyload"
+                        src="images/demo/anh2.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <h3 class="article-title">
+                      <a class="article-link" href=""
+                        >PM underlines need to optimise resources from SOEs</a
+                      >
+                    </h3>
+                    <p class="article-info">
+                      <span class="article-date">09:29 | 31/01/2023</span>
+                      <a class="article-cat" href="">Customs</a>
+                    </p>
+                    <div class="article-desc">
+                      VCN – The agricultural products, seafood, and leather
+                      exports of Dong Thap province-based enterprises have seen
+                      remarkable growth. The achievements resulting from
+                      effective solutions and facilitation by the local
+                      government, including Dong Thap Customs Department,
+                      enterprises said.
                     </div>
-                    <div class="article">
-                      <a class="article-image" href="">
-                        <img
-                          class="mastercms_lazyload"
-                          src="images/demo/imgDemo.jpg"
-                          alt=""
-                        />
-                      </a>
-                      <h3 class="article-title">
-                        <a class="article-link f0" href=""
-                          >VASEP wants greater imports of raw seafood
-                          materials</a
-                        >
-                      </h3>
-                      <p class="article-info">
-                        <span class="article-date">13:26 | 30/01/2023</span>
-                        <a class="article-cat" href="">Finance</a>
-                      </p>
-                      <div class="article-desc">
-                        VCN - Sharing and listening to businesses at forums or
-                        creating channels to receive opinions of businesses is a
-                        way for Quang Ninh Customs Department to timely support
-                        and accompany businesses to improve the business
-                        environment, and enhance the competitiveness of Quang
-                        Ninh province.
-                      </div>
+                  </div>
+                  <div class="article">
+                    <a class="article-image" href="">
+                      <img
+                        class="mastercms_lazyload"
+                        src="images/demo/anh3.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <h3 class="article-title">
+                      <a class="article-link" href=""
+                        >Vietnam's GDP growth to be well above 6.5% target,
+                        forecast experts</a
+                      >
+                    </h3>
+                    <p class="article-info">
+                      <span class="article-date">13:26 | 30/01/2023</span>
+                      <a class="article-cat" href="">Customs</a>
+                    </p>
+                    <div class="article-desc">
+                      VCN - Sharing and listening to businesses at forums or
+                      creating channels to receive opinions of businesses is a
+                      way for Quang Ninh Customs Department to timely support
+                      and accompany businesses to improve the business
+                      environment, and enhance the competitiveness of Quang Ninh
+                      province.
                     </div>
-                    <div class="article">
-                      <a class="article-image" href="">
-                        <img
-                          class="mastercms_lazyload"
-                          src="images/demo/imgDemo.jpg"
-                          alt=""
-                        />
-                      </a>
-                      <h3 class="article-title">
-                        <a class="article-link f0" href=""
-                          >Nearly 40 tonnes of counterfeit cigarettes seized in
-                          France</a
-                        >
-                      </h3>
-                      <p class="article-info">
-                        <span class="article-date">20:38 | 03/01/2023</span>
-                        <a class="article-cat" href="">Regulations</a>
-                      </p>
-                      <div class="article-desc">
-                        VCN - In 2022, for the first time, the budget revenue of
-                        Hai Phong Customs Department reached and exceeded the
-                        milestone of VND 70,000 billion, which is not only a
-                        bold mark in the work results of the Department but also
-                        an essential contribution to the overall achievements of
-                        the sector and the locality.
-                      </div>
+                  </div>
+                  <div class="article">
+                    <a class="article-image" href="">
+                      <img
+                        class="mastercms_lazyload"
+                        src="images/demo/anh4.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <h3 class="article-title">
+                      <a class="article-link" href=""
+                        >European Parlia-ment member hails strong Viet-namese
+                        position</a
+                      >
+                    </h3>
+                    <p class="article-info">
+                      <span class="article-date">20:38 | 03/01/2023</span>
+                      <a class="article-cat" href="">Customs</a>
+                    </p>
+                    <div class="article-desc">
+                      VCN - Exports of agricultural products, seafood, leather
+                      and footwear... of Dong Thap enterprises in the past year
+                      have experienced remarkable growth. Along with
+                      breakthrough solutions, enterprises commented that this
+                      result was from the support and facilitation of the
+                      management agencies in the area, including the Dong Thap
+                      Customs Department.
                     </div>
-                    <div class="article">
-                      <a class="article-image" href="">
-                        <img
-                          class="mastercms_lazyload"
-                          src="images/demo/imgDemo.jpg"
-                          alt=""
-                        />
-                      </a>
-                      <h3 class="article-title">
-                        <a class="article-link f0" href=""
-                          >Customs seizes suspected cocaine worth about
-                          HK$660,000 at airport
-                        </a>
-                      </h3>
-                      <p class="article-info">
-                        <span class="article-date">20:38 | 03/01/2023</span>
-                        <a class="article-cat" href="">Finance</a>
-                      </p>
-                      <div class="article-desc">
-                        VCN – The implementation of risk management measures on
-                        three routes of sea, land and air in modern customs
-                        control has contributed to improving the efficiency of
-                        risk assessment and screening selection and customs risk
-                        management.
-                      </div>
+                  </div>
+                  <div class="article">
+                    <a class="article-image" href="">
+                      <img
+                        class="mastercms_lazyload"
+                        src="images/demo/partychief.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <h3 class="article-title">
+                      <a class="article-link" href=""
+                        >Party chief chairs meeting of Central Military
+                        Comminission</a
+                      >
+                    </h3>
+                    <p class="article-info">
+                      <span class="article-date">20:38 | 03/01/2023</span>
+                      <a class="article-cat" href="">Customs</a>
+                    </p>
+                    <div class="article-desc">
+                      VCN - At the end of a year of many challenges, Dong Nai
+                      Customs Department's collective continues to leave a bold
+                      mark on the image of a State agency with many creative and
+                      effective activities in supporting enterprises, actively
+                      contributing to the results of local economic development
+                      and are highly appreciated by the government and the
+                      business community.
+                    </div>
+                  </div>
+                  <div class="article">
+                    <a class="article-image" href="">
+                      <img
+                        class="mastercms_lazyload"
+                        src="images/demo/anh2.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <h3 class="article-title">
+                      <a class="article-link" href=""
+                        >PM underlines need to optimise resources from SOEs</a
+                      >
+                    </h3>
+                    <p class="article-info">
+                      <span class="article-date">20:38 | 03/01/2023</span>
+                      <a class="article-cat" href="">Customs</a>
+                    </p>
+                    <div class="article-desc">
+                      VCN - In 2022, for the first time, the budget revenue of
+                      Hai Phong Customs Department reached and exceeded the
+                      milestone of VND 70,000 billion, which is not only a bold
+                      mark in the work results of the Department but also an
+                      essential contribution to the overall achievements of the
+                      sector and the locality.
+                    </div>
+                  </div>
+                  <div class="article">
+                    <a class="article-image" href="">
+                      <img
+                        class="mastercms_lazyload"
+                        src="images/demo/anh3.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <h3 class="article-title">
+                      <a class="article-link" href=""
+                        >Vietnam's GDP growth to be well above 6.5% target,
+                        forecast experts</a
+                      >
+                    </h3>
+                    <p class="article-info">
+                      <span class="article-date">20:38 | 03/01/2023</span>
+                      <a class="article-cat" href="">Customs</a>
+                    </p>
+                    <div class="article-desc">
+                      VCN – The implementation of risk management measures on
+                      three routes of sea, land and air in modern customs
+                      control has contributed to improving the efficiency of
+                      risk assessment and screening selection and customs risk
+                      management.
                     </div>
                   </div>
                 </div>
               </div>
-
-              <div class="hna-cover-right rt">
-                <div class="hna-qc fw clearfix">
-                  <div class="hna-qc-slider">
-                    <div class="hna-qc-item">
-                      <img src="images/demo/thaivillage.png" alt="300px" />
+              <div class="ndh-cover-center rt">
+                <div class="bx-cat-content fw lt clearfix">
+                  <div class="article">
+                    <a class="article-image" href="">
+                      <img
+                        class="mastercms_lazyload"
+                        src="images/demo/main_pic.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <h3 class="article-title">
+                      <a class="article-link" href=""
+                        >Promoting Vietnam-Laos ties-Existence, development rule
+                        of both countries: Lao diplomat</a
+                      >
+                    </h3>
+                    <p class="article-info">
+                      <span class="article-date">31/01/2023 09:30</span>
+                      <a class="article-cat" href="">Customs</a>
+                    </p>
+                    <div class="article-desc">
+                      The Vietnam-Laos relations have been special and rare ties
+                      with loyalty and purity, a priceless asset, a rule for
+                      existence and development of both countries and a decisive
+                      factor for the success of the revolution in each nation
+                    </div>
+                  </div>
+                  <div class="article">
+                    <a class="article-image" href="">
+                      <img
+                        class="mastercms_lazyload"
+                        src="images/demo/hoi_nghi.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <h3 class="article-title">
+                      <a class="article-link" href=""
+                        >Vietnam becomes world's sixth largest fibre, yarn
+                        exporter</a
+                      >
+                    </h3>
+                    <p class="article-info">
+                      <span class="article-date">09:29 | 31/01/2023</span>
+                      <a class="article-cat" href="">Customs</a>
+                    </p>
+                    <div class="article-desc">
+                      VCN – The agricultural products, seafood, and leather
+                      exports of Dong Thap province-based enterprises have seen
+                      remarkable growth. The achievements resulting from
+                      effective solutions and facilitation by the local
+                      government, including Dong Thap Customs Department,
+                      enterprises said.
+                    </div>
+                  </div>
+                  <div class="article">
+                    <a class="article-image" href="">
+                      <img
+                        class="mastercms_lazyload"
+                        src="images/demo/imgDemo.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <h3 class="article-title">
+                      <a class="article-link" href=""
+                        >VASEP wants greater imports of raw seafood materials</a
+                      >
+                    </h3>
+                    <p class="article-info">
+                      <span class="article-date">13:26 | 30/01/2023</span>
+                      <a class="article-cat" href="">Finance</a>
+                    </p>
+                    <div class="article-desc">
+                      VCN - Sharing and listening to businesses at forums or
+                      creating channels to receive opinions of businesses is a
+                      way for Quang Ninh Customs Department to timely support
+                      and accompany businesses to improve the business
+                      environment, and enhance the competitiveness of Quang Ninh
+                      province.
+                    </div>
+                  </div>
+                  <div class="article">
+                    <a class="article-image" href="">
+                      <img
+                        class="mastercms_lazyload"
+                        src="images/demo/imgDemo.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <h3 class="article-title">
+                      <a class="article-link" href=""
+                        >Nearly 40 tonnes of counterfeit cigarettes seized in
+                        France</a
+                      >
+                    </h3>
+                    <p class="article-info">
+                      <span class="article-date">20:38 | 03/01/2023</span>
+                      <a class="article-cat" href="">Regulations</a>
+                    </p>
+                    <div class="article-desc">
+                      VCN - In 2022, for the first time, the budget revenue of
+                      Hai Phong Customs Department reached and exceeded the
+                      milestone of VND 70,000 billion, which is not only a bold
+                      mark in the work results of the Department but also an
+                      essential contribution to the overall achievements of the
+                      sector and the locality.
+                    </div>
+                  </div>
+                  <div class="article">
+                    <a class="article-image" href="">
+                      <img
+                        class="mastercms_lazyload"
+                        src="images/demo/imgDemo.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <h3 class="article-title">
+                      <a class="article-link" href=""
+                        >Customs seizes suspected cocaine worth about HK$660,000
+                        at airport
+                      </a>
+                    </h3>
+                    <p class="article-info">
+                      <span class="article-date">20:38 | 03/01/2023</span>
+                      <a class="article-cat" href="">Finance</a>
+                    </p>
+                    <div class="article-desc">
+                      VCN – The implementation of risk management measures on
+                      three routes of sea, land and air in modern customs
+                      control has contributed to improving the efficiency of
+                      risk assessment and screening selection and customs risk
+                      management.
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
 
-                <div class="hna-qc fw clearfix">
-                  <div class="hna-qc-slider">
-                    <div class="hna-qc-item">
-                      <img src="images/demo/btm_global.png" alt="300px" />
-                    </div>
+            <div class="ndh-cover-right rt">
+              <div class="ndh-qc fw clearfix">
+                <div class="ndh-qc-slider">
+                  <div class="ndh-qc-item">
+                    <img src="images/demo/thaivillage.png" alt="300px" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="ndh-qc fw clearfix">
+                <div class="ndh-qc-slider">
+                  <div class="ndh-qc-item">
+                    <img src="images/demo/btm_global.png" alt="300px" />
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="main-body fw lt clearfix">
-          <div class="siteCenter clearfix">
-            <div class="bx-cat bx-grid-cover fw lt clearfix">
-              <div class="hna-section-left-2 lt">
-                <div class="hna-breaking-news fw lt clearfix">
-                  <div class="bx-cat-content fw lt">
-                    <div class="article">
-                      <a class="article-image" href="">
-                        <img
-                          class="mastercms_lazyload"
-                          src="images/demo/hoi_nghi.jpg"
-                          alt=""
-                        />
-                      </a>
-                      <h3 class="article-title">
-                        <a class="article-link f0" href=""
-                          >State Reserve sector allocates national reserve goods
-                          worth over VND752 billion</a
-                        >
-                      </h3>
-                      <p class="article-info">
-                        <span class="article-date">31/01/2023 09:30</span>
-                        <a class="article-cat" href="">Finance</a>
-                      </p>
-                      <div class="article-desc">
-                        On July 20, the General Department of State Reserves
-                        held an online conference to review the first half of
-                        the year and set out tasks for the second half of 2022
-                        in the State Reserve sector.
-                      </div>
-                    </div>
-                    <div class="article">
-                      <a class="article-image" href="">
-                        <img
-                          class="mastercms_lazyload"
-                          src="images/demo/vietnam_fibre.jpg"
-                          alt=""
-                        />
-                      </a>
-                      <h3 class="article-title">
-                        <a class="article-link f0" href=""
-                          >Vietnam becomes world’s sixth largest fibre, yarn
-                          exporter</a
-                        >
-                      </h3>
-                      <p class="article-info">
-                        <span class="article-date">09:29 | 31/01/2023</span>
-                        <a class="article-cat" href="">Regulations</a>
-                      </p>
-                      <div class="article-desc">
-                        Vietnam has surpassed the Republic of Korea to become
-                        the world’s sixth largest fibre and yarn exporter after
-                        shipping abroad 2.37 billion USD worth of these items in
-                        the first five months of 2022.
-                      </div>
-                    </div>
-                    <div class="article">
-                      <a class="article-image" href="">
-                        <img
-                          class="mastercms_lazyload"
-                          src="images/demo/imgVasep.jpg"
-                          alt=""
-                        />
-                      </a>
-                      <h3 class="article-title">
-                        <a class="article-link f0" href=""
-                          >VASEP wants greater imports of raw seafood
-                          materials</a
-                        >
-                      </h3>
-                      <p class="article-info">
-                        <span class="article-date">13:26 | 30/01/2023</span>
-                        <a class="article-cat" href="">Regulations</a>
-                      </p>
-                      <div class="article-desc">
-                        The State should have policies to encourage the import
-                        of seafood materials for export processing because
-                        processing factories lack raw materials,
-                      </div>
-                    </div>
-                    <div class="article">
-                      <a class="article-image" href="">
-                        <img
-                          class="mastercms_lazyload"
-                          src="images/demo/vietnam_eco.jpg"
-                          alt=""
-                        />
-                      </a>
-                      <h3 class="article-title">
-                        <a class="article-link f0" href=""
-                          >Optimistic forecast for Vietnam’s economy in 2022</a
-                        >
-                      </h3>
-                      <p class="article-info">
-                        <span class="article-date">20:38 | 03/01/2023</span>
-                        <a class="article-cat" href="">Regulations</a>
-                      </p>
-                      <div class="article-desc">
-                        Vietnam’s economic growth this year can reach up to 6.9%
-                        in the best-case scenario, the Central Institute for
-                        Economic Management (CIEM).
-                      </div>
-                    </div>
-                    <div class="article">
-                      <a class="article-image" href="">
-                        <img
-                          class="mastercms_lazyload"
-                          src="images/demo/imgCourt.jpg"
-                          alt=""
-                        />
-                      </a>
-                      <h3 class="article-title">
-                        <a class="article-link f0" href=""
-                          >Four criminals jailed for 18 years for trafficking
-                          pangolin scales
-                        </a>
-                      </h3>
-                      <p class="article-info">
-                        <span class="article-date">20:38 | 03/01/2023</span>
-                        <a class="article-cat" href="">Regulations</a>
-                      </p>
-                      <div class="article-desc">
-                        Education for Nature -Vietnam (ENV) has announced that
-                        Hanoi People's Court has just handed 18-year jail
-                        sentences to four criminals for trafficking.
-                      </div>
-                    </div>
-                    <div class="article">
-                      <a class="article-image" href="">
-                        <img
-                          class="mastercms_lazyload"
-                          src="images/demo/pressConf.jpg"
-                          alt=""
-                        />
-                      </a>
-                      <h3 class="article-title">
-                        <a class="article-link f0" href=""
-                          >Việt Nam rebukes US report on human trafficking as
-                          inaccurate: Foreign ministry</a
-                        >
-                      </h3>
-                      <p class="article-info">
-                        <span class="article-date">20:38 | 03/01/2023</span>
-                        <a class="article-cat" href="">Regulations</a>
-                      </p>
-                      <div class="article-desc">
-                        The spokesperson for the foreign ministry issued a
-                        statement on Thursday in response to the US report
-                        earlier released this week which downgrades Việt Nam to
-                        tier 3.
-                      </div>
-                    </div>
-                    <div class="article">
-                      <a class="article-image" href="">
-                        <img
-                          class="mastercms_lazyload"
-                          src="images/demo/inspection.jpg"
-                          alt=""
-                        />
-                      </a>
-                      <h3 class="article-title">
-                        <a class="article-link f0" href=""
-                          >Inspection Commission considers disciplinary measures
-                          against province leaders, officials</a
-                        >
-                      </h3>
-                      <p class="article-info">
-                        <span class="article-date">20:38 | 03/01/2023</span>
-                        <a class="article-cat" href="">Regulations</a>
-                      </p>
-                      <div class="article-desc">
-                        The Party Central Committee’s Inspection Commission
-                        convened its 17th meeting from July 13-14.
-                      </div>
-                    </div>
-
-                    <div
-                      class="hna-qc-center-full fw lt clearfix"
-                      style="border-bottom: 0"
-                    >
-                      <div class="siteCenter">
-                        <img
-                          src="images/demo/euronew_travel.png"
-                          alt=""
-                          style="width: 970px; height: 249px; margin-top: 10px"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="hna-section-right-2 rt">
-                <div class="hna-video-clip fw lt clearfix">
-                  <div class="bx-cat-title fw lt mb2 clearfix">
-                    <h2 class="bx-cat-name f4 lt">
-                      <a class="bx-cat-link" href=""
-                        ><span class="clr-008ed2">Videos</span></a
+      <div class="main-body fw lt clearfix">
+        <div class="siteCenter clearfix">
+          <div class="bx-cat bx-grid-cover fw lt clearfix">
+            <div class="ndh-section-left-2 lt">
+              <div class="ndh-breaking-news fw lt clearfix">
+                <div class="bx-cat-content fw lt">
+                  <div class="article">
+                    <a class="article-image" href="">
+                      <img
+                        class="mastercms_lazyload"
+                        src="images/demo/hoi_nghi.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <h3 class="article-title">
+                      <a class="article-link" href=""
+                        >State Reserve sector allocates national reserve goods
+                        worth over VND752 billion</a
                       >
-                    </h2>
+                    </h3>
+                    <p class="article-info">
+                      <span class="article-date">31/01/2023 09:30</span>
+                      <a class="article-cat" href="">Finance</a>
+                    </p>
+                    <div class="article-desc">
+                      On July 20, the General Department of State Reserves held
+                      an online conference to review the first half of the year
+                      and set out tasks for the second half of 2022 in the State
+                      Reserve sector.
+                    </div>
                   </div>
-                  <div class="bx-cat-content fw lt clearfix">
-                    <div class="article">
-                      <a class="article-image" href="">
-                        <img
-                          class="mastercms_lazyload"
-                          src="images/demo/langSonCustom.jpg"
-                          alt=""
-                        />
-                        <span class="ico-player"></span>
-                      </a>
-                      <h3 class="article-title">
-                        <a class="article-link f0" href=""
-                          >Lang Son Customs promotes digital transformation</a
-                        >
-                      </h3>
-                      <p class="article-info">
-                        <span class="article-date">31/01/2023 09:30</span>
-                        <a class="article-cat" href="">Customs</a>
-                      </p>
-                      <div class="article-desc">
-                        VCN – During Lunar New Year 2023, Noi Bai International
-                        Airport Customs Branch handled customs procedures for
-                        209 international flights with more than 54,000
-                        passengers on entry.
-                      </div>
+                  <div class="article">
+                    <a class="article-image" href="">
+                      <img
+                        class="mastercms_lazyload"
+                        src="images/demo/vietnam_fibre.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <h3 class="article-title">
+                      <a class="article-link" href=""
+                        >Vietnam becomes world’s sixth largest fibre, yarn
+                        exporter</a
+                      >
+                    </h3>
+                    <p class="article-info">
+                      <span class="article-date">09:29 | 31/01/2023</span>
+                      <a class="article-cat" href="">Regulations</a>
+                    </p>
+                    <div class="article-desc">
+                      Vietnam has surpassed the Republic of Korea to become the
+                      world’s sixth largest fibre and yarn exporter after
+                      shipping abroad 2.37 billion USD worth of these items in
+                      the first five months of 2022.
                     </div>
-                    <div class="article">
-                      <a class="article-image" href="">
-                        <img
-                          class="mastercms_lazyload"
-                          src="images/demo/stockMarket.jpg"
-                          alt=""
-                        />
-                        <span class="ico-player"></span>
-                      </a>
-                      <h3 class="article-title">
-                        <a class="article-link f0" href=""
-                          >MoF strictly controls corporate bond market</a
-                        >
-                      </h3>
-                      <p class="article-info">
-                        <span class="article-date">09:29 | 31/01/2023</span>
-                        <a class="article-cat" href="">Customs</a>
-                      </p>
-                      <div class="article-desc">
-                        VCN – The agricultural products, seafood, and leather
-                        exports of Dong Thap province-based enterprises have
-                        seen remarkable growth. The achievements resulting from
-                        effective solutions and facilitation by the local
-                        government, including Dong Thap Customs Department,
-                        enterprises said.
-                      </div>
+                  </div>
+                  <div class="article">
+                    <a class="article-image" href="">
+                      <img
+                        class="mastercms_lazyload"
+                        src="images/demo/imgVasep.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <h3 class="article-title">
+                      <a class="article-link" href=""
+                        >VASEP wants greater imports of raw seafood materials</a
+                      >
+                    </h3>
+                    <p class="article-info">
+                      <span class="article-date">13:26 | 30/01/2023</span>
+                      <a class="article-cat" href="">Regulations</a>
+                    </p>
+                    <div class="article-desc">
+                      The State should have policies to encourage the import of
+                      seafood materials for export processing because processing
+                      factories lack raw materials,
                     </div>
-                    <div class="article">
-                      <a class="article-image" href="">
-                        <img
-                          class="mastercms_lazyload"
-                          src="images/demo/taxPolicies.jpg"
-                          alt=""
-                        />
-                        <span class="ico-player"></span>
-                      </a>
-                      <h3 class="article-title">
-                        <a class="article-link f0" href=""
-                          >People and businesses appreciate issued tax
-                          policies</a
-                        >
-                      </h3>
-                      <p class="article-info">
-                        <span class="article-date">13:26 | 30/01/2023</span>
-                        <a class="article-cat" href="">Customs</a>
-                      </p>
-                      <div class="article-desc">
-                        VCN - Sharing and listening to businesses at forums or
-                        creating channels to receive opinions of businesses is a
-                        way for Quang Ninh Customs Department to timely support
-                        and accompany businesses to improve the business
-                        environment, and enhance the competitiveness of Quang
-                        Ninh province.
-                      </div>
+                  </div>
+                  <div class="article">
+                    <a class="article-image" href="">
+                      <img
+                        class="mastercms_lazyload"
+                        src="images/demo/vietnam_eco.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <h3 class="article-title">
+                      <a class="article-link" href=""
+                        >Optimistic forecast for Vietnam’s economy in 2022</a
+                      >
+                    </h3>
+                    <p class="article-info">
+                      <span class="article-date">20:38 | 03/01/2023</span>
+                      <a class="article-cat" href="">Regulations</a>
+                    </p>
+                    <div class="article-desc">
+                      Vietnam’s economic growth this year can reach up to 6.9%
+                      in the best-case scenario, the Central Institute for
+                      Economic Management (CIEM).
                     </div>
+                  </div>
+                  <div class="article">
+                    <a class="article-image" href="">
+                      <img
+                        class="mastercms_lazyload"
+                        src="images/demo/imgCourt.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <h3 class="article-title">
+                      <a class="article-link" href=""
+                        >Four criminals jailed for 18 years for trafficking
+                        pangolin scales
+                      </a>
+                    </h3>
+                    <p class="article-info">
+                      <span class="article-date">20:38 | 03/01/2023</span>
+                      <a class="article-cat" href="">Regulations</a>
+                    </p>
+                    <div class="article-desc">
+                      Education for Nature -Vietnam (ENV) has announced that
+                      Hanoi People's Court has just handed 18-year jail
+                      sentences to four criminals for trafficking.
+                    </div>
+                  </div>
+                  <div class="article">
+                    <a class="article-image" href="">
+                      <img
+                        class="mastercms_lazyload"
+                        src="images/demo/pressConf.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <h3 class="article-title">
+                      <a class="article-link" href=""
+                        >Việt Nam rebukes US report on human trafficking as
+                        inaccurate: Foreign ministry</a
+                      >
+                    </h3>
+                    <p class="article-info">
+                      <span class="article-date">20:38 | 03/01/2023</span>
+                      <a class="article-cat" href="">Regulations</a>
+                    </p>
+                    <div class="article-desc">
+                      The spokesperson for the foreign ministry issued a
+                      statement on Thursday in response to the US report earlier
+                      released this week which downgrades Việt Nam to tier 3.
+                    </div>
+                  </div>
+                  <div class="article">
+                    <a class="article-image" href="">
+                      <img
+                        class="mastercms_lazyload"
+                        src="images/demo/inspection.jpg"
+                        alt=""
+                      />
+                    </a>
+                    <h3 class="article-title">
+                      <a class="article-link" href=""
+                        >Inspection Commission considers disciplinary measures
+                        against province leaders, officials</a
+                      >
+                    </h3>
+                    <p class="article-info">
+                      <span class="article-date">20:38 | 03/01/2023</span>
+                      <a class="article-cat" href="">Regulations</a>
+                    </p>
+                    <div class="article-desc">
+                      The Party Central Committee’s Inspection Commission
+                      convened its 17th meeting from July 13-14.
+                    </div>
+                  </div>
 
-                    <img
-                      class="mastercms_lazyload"
-                      src="images/demo/shopeeAds.png"
-                      alt=""
-                      style="margin-top: 32px"
-                      height="600"
-                      ;
-                      width="299"
-                      ;
-                    />
+                  <button onclick="myFunction()" id="myBtn">View more</button>
+
+                  <span id="dots"></span>
+
+                  <div
+                    class="ndh-qc-center-full fw lt clearfix"
+                    style="border-bottom: 0"
+                  >
+                    <div class="siteCenter">
+                      <img
+                        src="images/demo/euronew_travel.png"
+                        alt=""
+                        style="width: 970px; height: 249px; margin-top: 10px"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+            <div class="ndh-section-right-2 rt">
+              <div class="ndh-video-clip fw lt clearfix">
+                <div class="bx-cat-title fw lt mb2 clearfix">
+                  <h2 class="bx-cat-name lt">
+                    <a class="bx-cat-link" href=""
+                      ><span class="clr-008ed2">Videos</span></a
+                    >
+                  </h2>
+                </div>
+                <div class="bx-cat-content fw lt clearfix">
+                  <div class="article">
+                    <a class="article-image" href="">
+                      <img
+                        class="mastercms_lazyload"
+                        src="images/demo/langSonCustom.jpg"
+                        alt=""
+                      />
+                      <span class="ico-player"></span>
+                    </a>
+                    <h3 class="article-title">
+                      <a class="article-link" href=""
+                        >Lang Son Customs promotes digital transformation</a
+                      >
+                    </h3>
+                    <p class="article-info">
+                      <span class="article-date">31/01/2023 09:30</span>
+                      <a class="article-cat" href="">Customs</a>
+                    </p>
+                    <div class="article-desc">
+                      VCN – During Lunar New Year 2023, Noi Bai International
+                      Airport Customs Branch handled customs procedures for 209
+                      international flights with more than 54,000 passengers on
+                      entry.
+                    </div>
+                  </div>
+                  <div class="article">
+                    <a class="article-image" href="">
+                      <img
+                        class="mastercms_lazyload"
+                        src="images/demo/stockMarket.jpg"
+                        alt=""
+                      />
+                      <span class="ico-player"></span>
+                    </a>
+                    <h3 class="article-title">
+                      <a class="article-link" href=""
+                        >MoF strictly controls corporate bond market</a
+                      >
+                    </h3>
+                    <p class="article-info">
+                      <span class="article-date">09:29 | 31/01/2023</span>
+                      <a class="article-cat" href="">Customs</a>
+                    </p>
+                    <div class="article-desc">
+                      VCN – The agricultural products, seafood, and leather
+                      exports of Dong Thap province-based enterprises have seen
+                      remarkable growth. The achievements resulting from
+                      effective solutions and facilitation by the local
+                      government, including Dong Thap Customs Department,
+                      enterprises said.
+                    </div>
+                  </div>
+                  <div class="article">
+                    <a class="article-image" href="">
+                      <img
+                        class="mastercms_lazyload"
+                        src="images/demo/taxPolicies.jpg"
+                        alt=""
+                      />
+                      <span class="ico-player"></span>
+                    </a>
+                    <h3 class="article-title">
+                      <a class="article-link" href=""
+                        >People and businesses appreciate issued tax policies</a
+                      >
+                    </h3>
+                    <p class="article-info">
+                      <span class="article-date">13:26 | 30/01/2023</span>
+                      <a class="article-cat" href="">Customs</a>
+                    </p>
+                    <div class="article-desc">
+                      VCN - Sharing and listening to businesses at forums or
+                      creating channels to receive opinions of businesses is a
+                      way for Quang Ninh Customs Department to timely support
+                      and accompany businesses to improve the business
+                      environment, and enhance the competitiveness of Quang Ninh
+                      province.
+                    </div>
+                  </div>
+                  <img
+                    class="mastercms_lazyload"
+                    src="images/demo/shopeeAds.png"
+                    alt=""
+                    style="margin-top: 32px"
+                    height="600"
+                    ;
+                    width="299"
+                    ;
+                  />
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
 
+        <span id="more">
           <div class="main-body fw lt clearfix">
             <div class="siteCenter clearfix">
               <div class="bx-grid-section bx-grid-border">
-                <div class="hna-section-left lt">
-                  <div class="bx-cat hna-cat-type-1 fw lt mb clearfix">
+                <div class="ndh-section-left lt">
+                  <div class="bx-cat ndh-cat-type-1 fw lt mb clearfix">
                     <div class="bx-cat-title fw lt">
-                      <h2 class="bx-cat-name f4 lt">
+                      <h2 class="bx-cat-name lt">
                         <a class="bx-cat-link" href=""
                           ><span class="clr-008ed2">Cus</span>toms</a
                         >
@@ -1068,7 +1080,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Hai Phong Customs signs 23,000 Customs-Business
                             partnership development agreements</a
                           >
@@ -1092,7 +1104,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Da Nang Customs supplies 630 instructions for
                             enterprises</a
                           >
@@ -1119,7 +1131,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Vietnam’s peacekeeping engineering unit launches
                             first humanitarian work in Abyei</a
                           >
@@ -1146,7 +1158,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Quang Ninh Customs seizes infringing goods worth
                             VND2.6 billion</a
                           >
@@ -1174,7 +1186,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >The effectiveness of trade facilitation solutions
                             has promoted the growth of imports and exports</a
                           >
@@ -1202,7 +1214,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >GDVC’s Director General Nguyen Van Can meets US
                             Customs Attaché</a
                           >
@@ -1229,7 +1241,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Customs concentrates on communication,
                             dissemination and legal support for enterprises</a
                           >
@@ -1255,7 +1267,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Quang Ninh Customs seizes infringing goods worth
                             VND2.6 billion</a
                           >
@@ -1282,7 +1294,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >The effectiveness of trade facilitation solutions
                             has promoted the growth of imports and exports</a
                           >
@@ -1313,9 +1325,9 @@
                     </div>
                   </div>
 
-                  <div class="bx-cat hna-cat-type-1 fw lt mb clearfix">
+                  <div class="bx-cat ndh-cat-type-1 fw lt mb clearfix">
                     <div class="bx-cat-title fw lt">
-                      <h2 class="bx-cat-name f4 lt">
+                      <h2 class="bx-cat-name lt">
                         <a class="bx-cat-link" href=""
                           ><span class="clr-008ed2">Fi</span>nance</a
                         >
@@ -1331,7 +1343,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Government requests development of economic
                             development plan and state budget estimate in
                             2023</a
@@ -1357,7 +1369,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Banking-insurance cooperation: Profits increase,
                             customers feel frustrated</a
                           >
@@ -1384,7 +1396,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >State Reserve sector allocates national reserve
                             goods worth over VND752 billion</a
                           >
@@ -1411,7 +1423,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Budget deficit in 2020 decreased by VND18,394
                             billion compared to the estimate</a
                           >
@@ -1439,7 +1451,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >PIT revenue reaches 74.5% of estimate</a
                           >
                         </h3>
@@ -1466,7 +1478,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Banks more cautious with home loans | Business</a
                           >
                         </h3>
@@ -1492,7 +1504,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >VN stocks could be in sweet spot as GDP growth
                             surges, stronger growth forecast</a
                           >
@@ -1518,7 +1530,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >People and businesses appreciate issued tax
                             policies</a
                           >
@@ -1545,7 +1557,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Encouraging credibility rating culture to improve
                             corporate bond quality</a
                           >
@@ -1576,9 +1588,9 @@
                     </div>
                   </div>
 
-                  <div class="bx-cat hna-cat-type-1 fw lt mb clearfix">
+                  <div class="bx-cat ndh-cat-type-1 fw lt mb clearfix">
                     <div class="bx-cat-title fw lt">
-                      <h2 class="bx-cat-name f4 lt">
+                      <h2 class="bx-cat-name lt">
                         <a class="bx-cat-link" href=""
                           ><span class="clr-008ed2">Re</span>gulations</a
                         >
@@ -1594,7 +1606,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Amending procedures on means of transport to
                             satisfy Customs Digital</a
                           >
@@ -1618,7 +1630,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Facilitating business transactions in the
                             electronic environment</a
                           >
@@ -1645,7 +1657,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Technology changes need more appropriate legal
                             framework for electronic transactions</a
                           >
@@ -1672,7 +1684,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Regulations on UKVFTA bidding documents issued</a
                           >
                         </h3>
@@ -1699,7 +1711,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >PIT revenue reaches 74.5% of estimate</a
                           >
                         </h3>
@@ -1726,7 +1738,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Imported goods will be subject to tax exemption if
                             eligible</a
                           >
@@ -1753,7 +1765,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Website to look up specimen signatures and seals
                             for preferential C/O</a
                           >
@@ -1779,7 +1791,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >People and businesses appreciate issued tax
                             policies</a
                           >
@@ -1806,7 +1818,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >How will customs procedures for goods in transit
                             change?</a
                           >
@@ -1830,9 +1842,9 @@
                     </div>
                   </div>
 
-                  <div class="bx-cat hna-cat-type-1 fw lt mb clearfix">
+                  <div class="bx-cat ndh-cat-type-1 fw lt mb clearfix">
                     <div class="bx-cat-title fw lt">
-                      <h2 class="bx-cat-name f4 lt">
+                      <h2 class="bx-cat-name lt">
                         <a class="bx-cat-link" href=""
                           ><span class="clr-008ed2">Anti</span> - Smuggling</a
                         >
@@ -1848,7 +1860,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Hai Phong Customs handles about 2,000 customs
                             offenses</a
                           >
@@ -1873,7 +1885,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Preventing contraband beverages at the Quang Tri
                             border</a
                           >
@@ -1900,7 +1912,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Strengthen inspection and supervision of imported
                             sugar</a
                           >
@@ -1927,7 +1939,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Lang Son Customs handles smuggling suspects</a
                           >
                         </h3>
@@ -1954,7 +1966,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Customs open 51 cases after seizing 200 kg of drugs
                           </a>
                         </h3>
@@ -1981,7 +1993,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Thousands of suspected smuggled products seized</a
                           >
                         </h3>
@@ -2007,7 +2019,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Four criminals jailed for 18 years for trafficking
                             pangolin scales</a
                           >
@@ -2033,7 +2045,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Smuggled goods increase on the Tay Ninh border</a
                           >
                         </h3>
@@ -2059,7 +2071,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >HCMC Customs prevents many large tax frauds</a
                           >
                         </h3>
@@ -2082,9 +2094,9 @@
                     </div>
                   </div>
 
-                  <div class="bx-cat hna-cat-type-1 fw lt mb clearfix">
+                  <div class="bx-cat ndh-cat-type-1 fw lt mb clearfix">
                     <div class="bx-cat-title fw lt">
-                      <h2 class="bx-cat-name f4 lt">
+                      <h2 class="bx-cat-name lt">
                         <a class="bx-cat-link" href=""
                           ><span class="clr-008ed2">Import</span> - Export</a
                         >
@@ -2100,7 +2112,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Vietnam’s process manufacturing attractive to
                             foreign investors</a
                           >
@@ -2125,7 +2137,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >By 2030, 60% of agricultural exports are processed
                             products</a
                           >
@@ -2152,7 +2164,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Enterprises accompanying digital transformation</a
                           >
                         </h3>
@@ -2178,7 +2190,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Excluding tax, the average price of a car imported
                             from China is VND1 billion/unit</a
                           >
@@ -2206,7 +2218,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Vietnam, Australia post record high in two-way
                             trade</a
                           >
@@ -2234,7 +2246,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >CIEM: Economic growth in 2022 may reach 6.9%</a
                           >
                         </h3>
@@ -2260,7 +2272,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Vietnamese cassava facing fierce competition with
                             Thai cassava in Chinese market</a
                           >
@@ -2286,7 +2298,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >HCM City calls for US investment to 10 major
                             projects</a
                           >
@@ -2313,7 +2325,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Tra fish exporters earn big thanks to high price
                             rise</a
                           >
@@ -2337,9 +2349,9 @@
                     </div>
                   </div>
 
-                  <div class="bx-cat hna-cat-type-1 fw lt mb clearfix">
+                  <div class="bx-cat ndh-cat-type-1 fw lt mb clearfix">
                     <div class="bx-cat-title fw lt">
-                      <h2 class="bx-cat-name f4 lt">
+                      <h2 class="bx-cat-name lt">
                         <a class="bx-cat-link" href=""
                           ><span class="clr-008ed2">World</span> Customs</a
                         >
@@ -2355,7 +2367,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Customs officials find 300,000 baby eels in
                             suitcases at Schiphol</a
                           >
@@ -2380,7 +2392,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Customs seizes suspected cocaine worth about
                             HK$660,000 at airport</a
                           >
@@ -2407,7 +2419,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Customs officials find 300,000 baby eels in
                             suitcases at Schiphol</a
                           >
@@ -2434,7 +2446,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >'Largest ever' meth bust in NZ: Police, Customs
                             seize 613kg of the drug
                           </a>
@@ -2462,7 +2474,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Vietnam, Australia post record high in two-way
                             trade</a
                           >
@@ -2490,7 +2502,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Azerbaijan, World Customs Organization discuss
                             prospects for cooperation</a
                           >
@@ -2517,7 +2529,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Customs arrest two Ugandan women with heroin worth
                             Rs 90 crore at Delhi airport</a
                           >
@@ -2543,7 +2555,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >HCM City calls for US investment to 10 major
                             projects</a
                           >
@@ -2570,7 +2582,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Customs Officials Seize More Forged COVID-19
                             Vaccination Cards at O’Hare</a
                           >
@@ -2596,30 +2608,30 @@
 
                   <script>
                     $(document).ready(function () {
-                      $(".hna-cat-type-1").each(function () {
+                      $(".ndh-cat-type-1").each(function () {
                         $(this)
                           .find(".article")
                           .slice(5, 9)
-                          .wrapAll('<div class="hna-cat-right rt"></div>');
+                          .wrapAll('<div class="ndh-cat-right rt"></div>');
                         $(this)
                           .find(".article")
                           .slice(1, 5)
-                          .wrapAll('<div class="hna-cat-center lt"></div>');
+                          .wrapAll('<div class="ndh-cat-center lt"></div>');
                         $(this)
                           .find(".article")
                           .slice(0, 1)
-                          .wrapAll('<div class="hna-cat-left lt"></div>');
+                          .wrapAll('<div class="ndh-cat-left lt"></div>');
                       });
                     });
                   </script>
                 </div>
-                <div class="hna-section-right rt">
-                  <div class="bx-cat hna-cat-tabs fw clearfix">
-                    <div class="hna-tabs-title fw lt f5 mb2">
-                      <span class="hna-tabs-btn active" id="1">Latest</span>
-                      <span class="hna-tabs-btn" id="2">Most Read</span>
+                <div class="ndh-section-right rt">
+                  <div class="bx-cat ndh-cat-tabs fw clearfix">
+                    <div class="ndh-tabs-title fw lt mb2">
+                      <span class="ndh-tabs-btn active" id="1">Latest</span>
+                      <span class="ndh-tabs-btn" id="2">Most Read</span>
                     </div>
-                    <div class="hna-tabs-content fw lt hna-tabs-content-1">
+                    <div class="ndh-tabs-content fw lt ndh-tabs-content-1">
                       <div class="article">
                         <a class="article-image" href="">
                           <img
@@ -2629,7 +2641,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >HCM City calls for US investment to 10 major
                             projects</a
                           >
@@ -2654,7 +2666,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Tra fish exporters earn big thanks to high price
                             rise</a
                           >
@@ -2681,7 +2693,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Piloting support for enterprises voluntarily
                             complying with Customs Law</a
                           >
@@ -2708,7 +2720,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Technology changes need more appropriate legal
                             framework for electronic transactions</a
                           >
@@ -2734,7 +2746,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Lang Son Customs handles smuggling suspects</a
                           >
                         </h3>
@@ -2753,7 +2765,7 @@
                       </div>
                     </div>
                     <div
-                      class="hna-tabs-content fw lt hna-tabs-content-2"
+                      class="ndh-tabs-content fw lt ndh-tabs-content-2"
                       style="display: none"
                     >
                       <div class="article">
@@ -2765,7 +2777,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >HCM City calls for US investment to 10 major
                             projects</a
                           >
@@ -2790,7 +2802,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Tra fish exporters earn big thanks to high price
                             rise</a
                           >
@@ -2817,7 +2829,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Piloting support for enterprises voluntarily
                             complying with Customs Law</a
                           >
@@ -2844,7 +2856,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Technology changes need more appropriate legal
                             framework for electronic transactions</a
                           >
@@ -2870,7 +2882,7 @@
                           />
                         </a>
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Lang Son Customs handles smuggling suspects</a
                           >
                         </h3>
@@ -2890,20 +2902,20 @@
                     </div>
                     <script>
                       $(document).ready(function () {
-                        $(".hna-tabs-btn").click(function () {
+                        $(".ndh-tabs-btn").click(function () {
                           var getTabId = $(this).attr("id");
-                          $(".hna-tabs-content").hide();
-                          $(".hna-tabs-btn").removeClass("active");
+                          $(".ndh-tabs-content").hide();
+                          $(".ndh-tabs-btn").removeClass("active");
                           $(this).addClass("active");
-                          $(".hna-tabs-content-" + getTabId).show();
+                          $(".ndh-tabs-content-" + getTabId).show();
                         });
                       });
                     </script>
                   </div>
 
-                  <div class="bx-cat hna-legal-docs fw clearfix">
+                  <div class="bx-cat ndh-legal-docs fw clearfix">
                     <div class="bx-cat-title bx-cat-title-2 fw lt clearfix">
-                      <h2 class="bx-cat-name f4 lt">
+                      <h2 class="bx-cat-name lt">
                         <a class="bx-cat-link" href=""
                           ><span class="clr-008ed2">Legal</span> Documents</a
                         >
@@ -2917,7 +2929,7 @@
                         cellspacing="0"
                         cellpadding="0"
                       >
-                        <tr class="table-title f0">
+                        <tr class="table-title">
                           <td>No</td>
                           <td>Date</td>
                           <td>Number</td>
@@ -2925,35 +2937,35 @@
                         <tr>
                           <td>1</td>
                           <td>29/04/2016</td>
-                          <td class="f0 clr-008ed2">
+                          <td class="clr-008ed2">
                             <a href="" title="">1656/QD-BCT</a>
                           </td>
                         </tr>
                         <tr>
                           <td>2</td>
                           <td>22/03/2016</td>
-                          <td class="f0 clr-008ed2">
+                          <td class="clr-008ed2">
                             <a href="" title="">19/2016/ND-CP</a>
                           </td>
                         </tr>
                         <tr>
                           <td>3</td>
                           <td>05/02/2016</td>
-                          <td class="f0 clr-008ed2">
+                          <td class="clr-008ed2">
                             <a href="" title="">21/2016/TT-BTC</a>
                           </td>
                         </tr>
                         <tr>
                           <td>4</td>
                           <td>30/12/2015</td>
-                          <td class="f0 clr-008ed2">
+                          <td class="clr-008ed2">
                             <a href="" title="">55/2015/TT-BCT</a>
                           </td>
                         </tr>
                         <tr>
                           <td>5</td>
                           <td>25/12/2015</td>
-                          <td class="f0 clr-008ed2">
+                          <td class="clr-008ed2">
                             <a href="" title="">207/2015/TT-BTC</a>
                           </td>
                         </tr>
@@ -2961,9 +2973,9 @@
                     </div>
                   </div>
 
-                  <div class="bx-cat hna-sidebar-link fw clearfix">
+                  <div class="bx-cat ndh-sidebar-link fw clearfix">
                     <div class="bx-cat-title bx-cat-title-2 fw lt mb2 clearfix">
-                      <h2 class="bx-cat-name f4 lt">
+                      <h2 class="bx-cat-name lt">
                         <a class="bx-cat-link" href=""
                           ><span class="clr-008ed2">Customs</span> Statistics</a
                         >
@@ -2972,7 +2984,7 @@
                     <div class="bx-cat-content fw lt clearfix">
                       <div class="article">
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Preliminary assessment of Vietnam international
                             merchandise trade performance in the second half of
                             December, 2022</a
@@ -2981,7 +2993,7 @@
                       </div>
                       <div class="article">
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Preliminary assessment of Vietnam international
                             merchandise trade performance in full year 2022</a
                           >
@@ -2989,7 +3001,7 @@
                       </div>
                       <div class="article">
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Preliminary assessment of Vietnam international
                             merchandise trade performance in the first half of
                             December, 2022</a
@@ -2998,7 +3010,7 @@
                       </div>
                       <div class="article">
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Preliminary assessment of Vietnam international
                             merchandise trade performance in the second half of
                             November, 2022</a
@@ -3007,7 +3019,7 @@
                       </div>
                       <div class="article">
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Preliminary assessment of Vietnam international
                             merchandise trade performance in the first 11 months
                             of 2022</a
@@ -3017,9 +3029,9 @@
                     </div>
                   </div>
 
-                  <div class="bx-cat hna-sidebar-link fw clearfix">
+                  <div class="bx-cat ndh-sidebar-link fw clearfix">
                     <div class="bx-cat-title bx-cat-title-2 fw lt mb2 clearfix">
-                      <h2 class="bx-cat-name f4 lt">
+                      <h2 class="bx-cat-name lt">
                         <a class="bx-cat-link" href=""
                           ><span class="clr-008ed2">Q</span> & A</a
                         >
@@ -3028,7 +3040,7 @@
                     <div class="bx-cat-content fw lt clearfix">
                       <div class="article">
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Inquiry with regard to import/export of petroleum
                             products</a
                           >
@@ -3036,28 +3048,28 @@
                       </div>
                       <div class="article">
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Natural mineral water - HS code 2201</a
                           >
                         </h3>
                       </div>
                       <div class="article">
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >regarding car polising products import figure</a
                           >
                         </h3>
                       </div>
                       <div class="article">
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Import SUV car from US to Vietnam</a
                           >
                         </h3>
                       </div>
                       <div class="article">
                         <h3 class="article-title">
-                          <a class="article-link f0" href=""
+                          <a class="article-link" href=""
                             >Import and Export Statistics</a
                           >
                         </h3>
@@ -3065,9 +3077,9 @@
                     </div>
                   </div>
 
-                  <div class="hna-qc fw clearfix">
-                    <div class="hna-qc-slider">
-                      <div class="hna-qc-item">
+                  <div class="ndh-qc fw clearfix">
+                    <div class="ndh-qc-slider">
+                      <div class="ndh-qc-item">
                         <img
                           border="0"
                           src="images/demo/vpBank.png"
@@ -3083,106 +3095,103 @@
               </div>
             </div>
           </div>
-
           <div
-            class="hna-qc-center-full fw lt clearfix"
+            class="ndh-qc-center-full fw lt clearfix"
             style="border-bottom: 0"
           >
             <div class="siteCenter">
               <img src="images/pc/demo/kiot-viet.png" alt="" />
             </div>
           </div>
-        </div>
-      </main>
-
-      <footer id="footer" class="fw clearfix">
-        <div class="footer-info fw lt clearfix">
-          <div class="siteCenter clearfix">
-            <div class="footer-left lt">
-              <p class="mb2">
-                <a href="">
-                  <img src="images/pc/logo-footer.png" height="30" alt="" />
-                </a>
-              </p>
-              <p class="f0" style="color: #000">
-                SPECIALIZED PAGE OF CUSTOMS E-MAGAZINE
-              </p>
+        </span>
+      </div>
+    </main>
+    <footer id="footer" class="fw clearfix">
+      <div class="footer-info fw lt clearfix">
+        <div class="siteCenter clearfix">
+          <div class="footer-left lt">
+            <p class="mb2">
+              <a href="">
+                <img src="images/pc/logo-footer.png" height="30" alt="" />
+              </a>
+            </p>
+            <p class="footer-specialized-paged" style="color: #000">
+              SPECIALIZED PAGE OF CUSTOMS E-MAGAZINE
+            </p>
+            <div class="footer-mastercms-brightsky">
               <p>
                 Editor-in-Chief:
-                <span class="f6" style="color: #000">VU THI ANH HONG</span>
+                <span style="color: #000">VU THI ANH HONG</span>
               </p>
               <p>
                 Deputy Editor-in-Chief:
-                <span class="f6" style="color: #000"
+                <span style="color: #000"
                   >HOANG ANH VINH - NGUYEN CHI THANH</span
                 >
               </p>
               <p>
                 Managing Edior:
-                <span class="f6" style="color: #000">NGUYEN MANH HUNG</span>
+                <span style="color: #000">NGUYEN MANH HUNG</span>
               </p>
               <p>
                 Licence No. 21/GP-CBC dated 13/11/2020; Hotline: 0968.96.34.96
               </p>
               <p>
                 E-mail:
-                <span class="f6" style="color: #000"
-                  >vncustomsnews@gmail.com</span
-                >
-              </p>
-              <br />
-              <p>
-                © Copyright 2022 Customs News. Must specify "Source: Customs
-                News" and link to the original content when re-publish
-                information from this website.
+                <span style="color: #000">vncustomsnews@gmail.com</span>
               </p>
             </div>
-            <div class="footer-right rt">
-              <a
-                class="hna-icon-social hna-icon-facebook"
-                href=""
-                target="_blank"
-                rel="nofollow"
-              ></a>
-              <a
-                class="hna-icon-social hna-icon-youtube"
-                href=""
-                target="_blank"
-                rel="nofollow"
-              ></a>
-              <a
-                class="hna-icon-social hna-icon-twitter"
-                href=""
-                target="_blank"
-                rel="nofollow"
-              ></a>
-            </div>
+            <br />
+            <p>
+              © Copyright 2022 Customs News. Must specify "Source: Customs News"
+              and link to the original content when re-publish information from
+              this website.
+            </p>
+          </div>
+          <div class="footer-right rt">
+            <a
+              class="ndh-icon-social ndh-icon-facebook"
+              href=""
+              target="_blank"
+              rel="nofollow"
+            ></a>
+            <a
+              class="ndh-icon-social ndh-icon-youtube"
+              href=""
+              target="_blank"
+              rel="nofollow"
+            ></a>
+            <a
+              class="ndh-icon-social ndh-icon-twitter"
+              href=""
+              target="_blank"
+              rel="nofollow"
+            ></a>
           </div>
         </div>
-        <div class="footer-top fw lt f6 clearfix">
-          <div class="siteCenter clearfix">
-            <a href="">Vietnam Customs</a>
-            <a href="">policy</a>
-            <a href="">investment</a>
-            <a href="">export</a>
-            <a href="">Vietnam</a>
-            <a href="">import</a>
-            <a href="">customs</a>
-            <a href="">customs procedures</a>
-            <a href="">finance</a>
-            <a href="">tax declaration</a>
-          </div>
+      </div>
+      <div class="footer-top fw lt clearfix">
+        <div class="siteCenter clearfix">
+          <a href="">Vietnam Customs</a>
+          <a href="">policy</a>
+          <a href="">investment</a>
+          <a href="">export</a>
+          <a href="">Vietnam</a>
+          <a href="">import</a>
+          <a href="">customs</a>
+          <a href="">customs procedures</a>
+          <a href="">finance</a>
+          <a href="">tax declaration</a>
         </div>
-        <div class="footer-mastercms fw lt">
-          <div class="siteCenter clearfix">
-            <a href="https://mastercms.org" target="_blank" rel="noopener"
-              >Based on MasterCMS Ultimate Edition v2.9 2022</a
-            >
-          </div>
+      </div>
+      <div class="footer-mastercms fw lt">
+        <div class="siteCenter clearfix">
+          <a href="https://mastercms.org" target="_blank" rel="noopener"
+            >Based on MasterCMS Ultimate Edition v2.9 2022</a
+          >
         </div>
-      </footer>
-    </div>
-
+      </div>
+    </footer>
     <span class="backTop"></span>
     <script type="application/javascript">
       $(window).load(function () {
